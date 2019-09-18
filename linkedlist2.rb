@@ -23,10 +23,6 @@ def reverse_list(node, previous=nil)
   reverse_list(next_node, node) unless next_node == nil
 end
 
-# nil <- node3 -> node2 -> node1 -> nil
-# nil <- node3 node2-> node1 -> nil
-# node3 -> node2 -> node1 -> nil
-
 node1 = Node.new(37)
 node2 = Node.new(99, node1)
 node3 = Node.new(12, node2)
